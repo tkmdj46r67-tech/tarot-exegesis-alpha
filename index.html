@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Reading Room — Tarot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand">
+      <span class="mark">✦</span>
+      <h1>The Reading Room</h1>
+    </div>
+    <nav>
+      <button class="nav-btn active" data-view="read">Read</button>
+      <button class="nav-btn" data-view="library">Library</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="read-view" class="view active">
+      <div id="read-form" class="panel">
+        <label for="question" class="field-label">What would you like to ask? <span class="muted">(optional)</span></label>
+        <textarea id="question" rows="2" placeholder="A question, a situation, a feeling…"></textarea>
+
+        <div class="form-row">
+          <fieldset class="spread-select">
+            <legend>Spread</legend>
+            <label><input type="radio" name="spread" value="one" checked> One card</label>
+            <label><input type="radio" name="spread" value="three"> Three card</label>
+          </fieldset>
+          <label class="toggle">
+            <input type="checkbox" id="reversals">
+            <span>Include reversals</span>
+          </label>
+        </div>
+
+        <button id="deal-btn" class="primary">Shuffle &amp; Deal</button>
+      </div>
+
+      <div id="reading" hidden></div>
+    </section>
+
+    <section id="library-view" class="view">
+      <div class="library-header">
+        <h2>Library</h2>
+        <div class="library-controls">
+          <input type="search" id="lib-search" placeholder="Search names or keywords…">
+          <select id="lib-filter">
+            <option value="all">All cards</option>
+            <option value="major">Major Arcana</option>
+            <option value="wands">Wands</option>
+            <option value="cups">Cups</option>
+            <option value="swords">Swords</option>
+            <option value="pentacles">Pentacles</option>
+          </select>
+        </div>
+      </div>
+      <div id="library-grid" class="library-grid"></div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
