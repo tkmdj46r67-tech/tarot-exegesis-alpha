@@ -299,60 +299,100 @@
     `;
     $('#derivations').appendChild(el);
   }
+function buildDerivation(d, i) {
+  const spread = SPREADS[state.spread];
+  const pos = spread.positions[i];
+  const orient = d.reversed ? 'reversed' : 'upright';
+  const tip = jodorowskyTipForCard(d);
 
-  function buildDerivation(d, i) {
-    const spread = SPREADS[state.spread];
-    const pos = spread.positions[i];
-    const orient = d.reversed ? 'reversed' : 'upright';
-    const tip = jodorowskyTipForCard(d);
-
-    const article = document.createElement('article');
-    article.className = 'derivation' + (d.reversed ? ' rev' : '');
-    article.dataset.index = i;
-    article.innerHTML = `
-      <div class="derivation-header">
-        <div class="derivation-thumb">
-          <img src="${img(d.card.image, 200)}" alt="${esc(d.card.name)}" loading="lazy">
-        </div>
-        <div class="derivation-title">
-          <h3>${esc(d.card.name)} <span class="orientation-badge ${orient}">${orient}</span></h3>
-          <div class="meta">
-            <span class="pos">${esc(pos.name)}</span>
-            <span class="sep">·</span>
-            <span>${esc(subtitle(d.card))}</span>
-          </div>
+  const article = document.createElement('article');
+  article.className = 'derivation' + (d.reversed ? ' rev' : '');
+  article.dataset.index = i;
+  article.innerHTML = `
+    <div class="derivation-header">
+      <div class="derivation-thumb">
+        <img src="${img(d.card.image, 200)}" alt="${esc(d.card.name)}" loading="lazy">
+      </div>
+      <div class="derivation-title">
+        <h3>${esc(d.card.name)} <span class="orientation-badge ${orient}">${orient}</span></h3>
+        <div class="meta">
+          <span class="pos">${esc(pos.name)}</span>
+          <span class="sep">·</span>
+          <span>${esc(subtitle(d.card))}</span>
         </div>
       </div>
-      <div class="derivation-body">
-        <section class="derivation-section">
-          <h4><span class="step">Step 1</span>Keywords for this orientation</h4>
-          <div class="keywords-row">
-            ${d.card.keywords[orient].map((k) => `<span class="kw">${esc(k)}</span>`).join('')}
+    </div>
+    <div class="derivation-body">
+      <section class="derivation-section">
+        <h4><span class="step">Step 1</span>Keywords for this orientation</h4>
+        <div class="keywords-row">
+          ${d.card.keywords[orient].map((k) => `<span class="kw">${esc(k)}</span>`).join('')}
+        </div>
+      </section>
+      <section class="derivation-section">
+        <h4><span class="step">Step 2</span>What is actually drawn on the card</h4>
+        <ul class="symbols-list">
+          ${d.card.symbols.map((s) => `<li>${esc(s)}</li>`).join('')}
+        </ul>
+        <details class="detailed-view">
+          <summary>Detailed view — 35 features</summary>
+          <div class="feature-grid">
+            ${renderDetailedFeatures(d.card)}
           </div>
-        </section>
-        <section class="derivation-section">
-          <h4><span class="step">Step 2</span>What is actually drawn on the card</h4>
-          <ul class="symbols-list">
-            ${d.card.symbols.map((s) => `<li>${esc(s)}</li>`).join('')}
-          </ul>
-        </section>
-        <section class="derivation-section">
-          <h4><span class="step">Step 3</span>The reading that follows from the above</h4>
-          <p class="reading-text">${esc(d.card.reading[orient])}</p>
-        </section>
-        <section class="derivation-section">
-          <h4><span class="step">Step 4</span>How it sits in the ${esc(pos.name)} position</h4>
-          <p class="position-note">${esc(pos.frame)}</p>
-        </section>
-        <section class="derivation-section step5">
-          <h4><span class="step">Step 5</span>The Jodorowsky Tip</h4>
-          <p class="reading-text">${esc(tip.energyLine)}</p>
-          <p class="tip-act"><span class="arrow">→</span> ${esc(tip.actLine)}</p>
-        </section>
-      </div>
+        </details>
+      </section>
+      <section class="derivation-section">
+        <h4><span class="step">Step 3</span>The reading that follows from the above</h4>
+        <p class="reading-text">${esc(d.card.reading[orient])}</p>
+        <details class="detailed-view">
+          <summary>Detailed view — synthesis</summary>
+          <p class="detailed-reading">${esc(d.card.detailedReading)}</p>
+        </details>
+      </section>
+      <section class="derivation-section">
+        <h4><span class="step">Step 4</span>How it sits in the ${esc(pos.name)} position</h4>
+        <p class="position-note">${esc(pos.frame)}</p>
+      </section>
+      <section class="derivation-section step5">
+        <h4><span class="step">Step 5</span>The Jodorowsky Tip</h4>
+        <p class="reading-text">${esc(tip.energyLine)}</p>
+        <p class="tip-act"><span class="arrow">→</span> ${esc(tip.actLine)}</p>
+      </section>
+    </div>
+  `;
+  return article;
+}
+
+function renderDetailedFeatures(card) {
+  const families = {
+    'A. Elemental & Numerical Frame': ['elementalRegister', 'numericalDegree', 'courtFunction'],
+    'B. Figural Presence': ['figureType', 'posture', 'gesture', 'gaze', 'movementDirection'],
+    'C. Objects & Instruments': ['centralObject', 'heldObject', 'creature', 'tool', 'writtenWord'],
+    'D. Setting & Architecture': ['landscape', 'architecture', 'threshold', 'celestialBody', 'weather'],
+    'E. Compositional Grammar': ['symmetry', 'repetitionCount', 'verticalAxis', 'horizontalAxis', 'inversion'],
+    'F. Embodied Markers': ['clothing', 'nudity', 'crown', 'wound', 'binding'],
+    'G. Elemental Presences': ['water', 'fire', 'vegetation', 'stone'],
+    'H. Relational & Ethical': ['polarity', 'remedy', 'prescribedAct']
+  };
+
+  return Object.entries(families).map(([familyName, keys]) => {
+    const rows = keys.map((key) => {
+      const f = card.detailedFeatures[key];
+      if (!f) return '';
+      return `
+        <div class="feature-row">
+          <div class="cat">${esc(key)}</div>
+          <div class="val">${esc(f.value)}</div>
+          <div class="note">${esc(f.note)}</div>
+        </div>
+      `;
+    }).join('');
+    return `
+      <div class="feature-family">${esc(familyName)}</div>
+      ${rows}
     `;
-    return article;
-  }
+  }).join('');
+}
 
   function reset() {
     $('#read-form').hidden = false;
