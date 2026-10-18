@@ -203,13 +203,36 @@
   }
 
   // ---------- Load data ----------
-  async function load() {
-    const res = await fetch('cards.json');
-    if (!res.ok) throw new Error('Failed to load cards.json');
-    cards = await res.json();
-    cards.forEach((c) => CARD_BY_ID.set(c.id, c));
-    renderLibrary();
-  }
+  const CARD_FILES = [
+  'cards-major.json',
+  'cards-wands.json',
+  'cards-cups.json',
+  'cards-swords.json',
+  'cards-pentacles.json'
+];
+
+async function load() {
+  const results = await Promise.all(
+    CARD_FILES.map(async (f) => {
+      try {
+        const r = await fetch(f);
+        if (!r.ok) {
+          console.warn('[load] missing card file:', f, r.status);
+          return [];
+        }
+        return await r.json();
+      } catch (e) {
+        console.warn('[load] failed to load', f, e.message);
+        return [];
+      }
+    })
+  );
+  cards = results.flat();
+  window.__cards = cards; // keeps cards inspectable from the console
+  cards.forEach((c) => CARD_BY_ID.set(c.id, c));
+  console.log('[load] cards loaded:', cards.length);
+  renderLibrary();
+}
 
   // ---------- Reading flow ----------
   function deal() {
