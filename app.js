@@ -490,9 +490,16 @@ function renderDetailedFeatures(card) {
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
 
     load().catch((err) => {
-      console.error(err);
-      document.getElementById('read-form').innerHTML =
-        '<p style="color:#c88;">Could not load <code>cards.json</code>. Serve this page over HTTP (not <code>file://</code>) — GitHub Pages will do this automatically.</p>';
-    });
+  console.error(err);
+  const isParse = err instanceof SyntaxError || /json/i.test(err.message || '');
+  const detail = err && err.message ? esc(err.message) : esc(String(err));
+  document.getElementById('read-form').innerHTML = `
+    <p style="color:#c88;line-height:1.6;">
+      Could not load <code>cards.json</code>.
+      <br><small style="opacity:0.8;">${isParse ? 'JSON syntax error' : 'Network error'}: ${detail}</small>
+      ${isParse ? '<br><small style="opacity:0.8;">Check the file with a JSON validator, or run <code>node -e "JSON.parse(require(\'fs\').readFileSync(\'cards.json\',\'utf8\'))"</code> in the repo directory.</small>' : ''}
+    </p>
+  `;
+});
   });
 })();
