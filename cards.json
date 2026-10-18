@@ -80,9 +80,7 @@
   {"id":"pents-p","name":"Page of Pentacles","suit":"pentacles","number":"Page","image":"Pents11.jpg","keywords":{"upright":["learning","opportunity","study","practical beginnings"],"reversed":["missed opportunity","laziness","unfocused","poor planning"]},"symbols":["A youth holds a coin, looking at it — the opportunity, examined.","A field behind — the ground where the study will be applied.","Mountains in the distance — the goal, still far.","A focused gaze — the willingness to begin at the beginning."],"reading":{"upright":"The Page of Pentacles is the beginning of practical learning: the student, the apprentice, the willingness to start small and to study.","reversed":"Reversed, the study is unfocused or refused: the opportunity missed, the laziness that will not begin, or the plan that is not a plan."}},
   {"id":"pents-n","name":"Knight of Pentacles","suit":"pentacles","number":"Knight","image":"Pents12.jpg","keywords":{"upright":["diligence","reliability","slow progress","responsibility"],"reversed":["stagnation","laziness","stubbornness","over-caution"]},"symbols":["A knight on a still, dark horse — the pace is slow, and it is deliberate.","A coin held in the hand — the responsibility, taken seriously.","Fields behind — the ground being worked.","The horse is not rearing — the motion is steady, not dramatic."],"reading":{"upright":"The Knight of Pentacles is the slow, reliable worker: diligence, responsibility, the progress that is measured in years rather than days.","reversed":"Reversed, the steady has become stuck: stagnation, the laziness that calls itself caution, or the stubborn refusal to move."}},
   {"id":"pents-q","name":"Queen of Pentacles","suit":"pentacles","number":"Queen","image":"Pents13.jpg","keywords":{"upright":["nurturing","practicality","abundance","resourcefulness"],"reversed":["neglect","smothering","overwork","financial anxiety"]},"symbols":["A queen sits in a garden — practicality, growing things, the world tended.","A coin held in her lap — the resource, kept close.","Rabbits nearby — fertility, the multiplication of what is cared for.","A rich robe and a canopy of leaves — abundance, made habitable."],"reading":{"upright":"The Queen of Pentacles is practical nurture: the resourcefulness that makes a home, the abundance that is shared, the ground that holds others.","reversed":["Reversed, the nurture is distorted: neglect, smothering, or the overwork that empties the one who tends the ground."]}},
-  {"id":"pents-k","name":"King of Pentacles","suit":"pentacles","number":"King","image":"Pents14.jpg","keywords":{"upright":["prosperity","stability","leadership","solidity"],"reversed":["greed","stubbornness","rigidity","materialism"]},"symbols":["A king sits on a throne in a garden — rule, held with ease.","A coin in one hand and a scepter in the other — wealth and authority, together.","Vines climb around him — abundance, growing where he is.","A bull's head on the throne — Taurus, the sign of endurance."],"reading":{"upright":"The King of Pentacles is the secure ruler of the material world: prosperity, stability, the leadership that comes from having built something real.","reversed":"Reversed, the security is hardened: greed, stubbornness, or the materialism that cannot see past its own ground."}}
-]
-[
+  {"id":"pents-k","name":"King of Pentacles","suit":"pentacles","number":"King","image":"Pents14.jpg","keywords":{"upright":["prosperity","stability","leadership","solidity"],"reversed":["greed","stubbornness","rigidity","materialism"]},"symbols":["A king sits on a throne in a garden — rule, held with ease.","A coin in one hand and a scepter in the other — wealth and authority, together.","Vines climb around him — abundance, growing where he is.","A bull's head on the throne — Taurus, the sign of endurance."],"reading":{"upright":"The King of Pentacles is the secure ruler of the material world: prosperity, stability, the leadership that comes from having built something real.","reversed":"Reversed, the security is hardened: greed, stubbornness, or the materialism that cannot see past its own ground."}},
   {
     "id": "wands-2",
     "name": "Two of Wands",
@@ -559,9 +557,7 @@
       "prescribedAct": {"value": "Set down one thing today that you have been carrying too long, and see whether you still need it.", "note": "The act is the discipline of release. The Ten of Wands' lesson is that the burden is not the same as the responsibility."}
     },
     "detailedReading": "The Ten of Wands is the fire element in its phase of burden. Its numerical degree is ten — the number of completion and the return to the beginning — and the figure is a standing man bent under a bundle of ten wands, walking toward a distant village. The landscape is the plain and the village: the village is the destination, the plain is the long last stretch. There is no creature, no written word, and no binding: the card is a card of human burden, not of instinct, and not of restraint. The bend of the figure is the partial inversion of the card. The asymmetry of the composition marks it as the burden, not the balance. The prescribed act follows from this: set down one thing today that you have been carrying too long, and see whether you still need it. The remedy is harmony — the Ten of Cups — because the burden needs to be corrected by the recognition of the home it is meant to serve."
-  }
-]
-[
+  },
   {
     "id": "cups-2",
     "name": "Two of Cups",
@@ -1038,9 +1034,7 @@
       "prescribedAct": {"value": "Look around at one group of people today and let yourself feel that you belong.", "note": "The act is the discipline of belonging. The Ten of Cups' lesson is that the harmony is not the absence of difficulty; it is the presence of the shared life."}
     },
     "detailedReading": "The Ten of Cups is the water element in its phase of completion. Its numerical degree is ten — the number of completion and the return to the beginning — and the figures are a family group with arms raised, under a rainbow of ten cups, with a house behind. The landscape is the house and the river: the house is the home, the river is the life that flows through it. There is no creature, no written word, no wound, and no binding: the card is a card of human household, not of instinct, not of suffering, and not of restraint. The symmetry of the composition confirms that it is the balance of the household blessing. The prescribed act follows from this: look around at one group of people today and let yourself feel that you belong. The remedy is burden — the Ten of Wands — because the harmony needs to be corrected by the recognition of the work it takes."
-  }
-]
-[
+  },
   {
     "id": "swords-2",
     "name": "Two of Swords",
@@ -1517,9 +1511,7 @@
       "prescribedAct": {"value": "Let one thing end today, and let the dawn come without you forcing it.", "note": "The act is the discipline of acceptance. The Ten of Swords' lesson is that the ending is not the opposite of the beginning; it is the condition of it."}
     },
     "detailedReading": "The Ten of Swords is the air element in its phase of ending. Its numerical degree is ten — the number of completion and the return to the beginning — and the figure is a fallen man, face down, with ten swords in the back, on a shore at dawn, with still water beyond. The landscape is the shore and the dawn: the dawn is the beginning that the ending makes possible, the still water is the calm after the storm. There is no creature, no written word, and no binding: the card is a card of human ending, not of instinct, and not of restraint. The wound is the central mark of the card. The inversion of the figure and the swords is the central feature. The prescribed act follows from this: let one thing end today, and let the dawn come without you forcing it. The remedy is harmony — the Ten of Cups — because the ending needs to be corrected by the recognition of the new household it makes possible."
-  }
-]
-[
+  },
   {
     "id": "pents-2",
     "name": "Two of Pentacles",
