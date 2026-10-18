@@ -399,10 +399,9 @@ button.primary:active { transform: translateY(1px); }
   content: "◆";
   position: absolute;
   left: 0;
-  top: 0;
+  top: 5px;
   color: var(--accent-dim);
   font-size: 10px;
-  top: 5px;
 }
 
 .keywords-row { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -432,6 +431,42 @@ button.primary:active { transform: translateY(1px); }
 }
 
 .position-note strong { color: var(--text); font-weight: 500; }
+
+/* ---------- Step 5: the tip ---------- */
+.step5 {
+  background: linear-gradient(180deg, rgba(201, 169, 97, 0.05), transparent);
+}
+
+.step5 h4 {
+  color: var(--accent);
+}
+
+.tip-act {
+  margin-top: 14px;
+  padding: 12px 16px;
+  border-left: 2px solid var(--accent);
+  background: rgba(201, 169, 97, 0.06);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.tip-act .arrow {
+  color: var(--accent);
+  margin-right: 6px;
+  font-weight: 500;
+}
+
+.overall-tip {
+  border: 1px solid var(--border-bright);
+  border-radius: var(--radius);
+  overflow: hidden;
+  animation: fadeIn 0.4s ease;
+}
+
+.overall-tip .derivation-section {
+  border-bottom: none;
+}
 
 /* ---------- Library ---------- */
 .library-header {
