@@ -4,7 +4,7 @@
     "name": "The Fool",
     "suit": "major",
     "number": "0",
-    "image": "RWS_Tarot_00_Fool.jpg",
+    "image": "00_Fool.jpg",
     "keywords": {"upright": ["beginnings","innocence","leap of faith","spontaneity"],"reversed": ["recklessness","hesitation","foolishness","fear of the new"]},
     "symbols": [
       "A youth steps toward a cliff edge, face lifted to the sky rather than the drop — the beginning made without calculating the fall.",
@@ -57,7 +57,7 @@
     "name": "The Magician",
     "suit": "major",
     "number": "I",
-    "image": "RWS_Tarot_01_Magician.jpg",
+    "image": "01_Magician.jpg",
     "keywords": {"upright": ["will","manifestation","skill","resourcefulness"],"reversed": ["manipulation","untapped talent","scattered will","deception"]},
     "symbols": [
       "A figure raises a wand to the sky while pointing to the earth — will above, matter below, the channel between them made active.",
@@ -110,7 +110,7 @@
     "name": "The High Priestess",
     "suit": "major",
     "number": "II",
-    "image": "RWS_Tarot_02_High_Priestess.jpg",
+    "image": "02_High_Priestess.jpg",
     "keywords": {"upright": ["intuition","mystery","subconscious","hidden knowledge"],"reversed": ["secrets","disconnection","ignored intuition","surface reading"]},
     "symbols": [
       "She sits between a black pillar and a white one — the two poles of experience, held in balance rather than resolved.",
@@ -163,7 +163,7 @@
     "name": "The Empress",
     "suit": "major",
     "number": "III",
-    "image": "RWS_Tarot_03_Empress.jpg",
+    "image": "03_Empress.jpg",
     "keywords": {"upright": ["abundance","nurturing","fertility","pleasure"],"reversed": ["creative block","neglect","smothering","dependence"]},
     "symbols": [
       "She reclines on cushions in an open field — ease, sensuality, the body at rest in the world.",
@@ -216,7 +216,7 @@
     "name": "The Emperor",
     "suit": "major",
     "number": "IV",
-    "image": "RWS_Tarot_04_Emperor.jpg",
+    "image": "04_Emperor.jpg",
     "keywords": {"upright": ["authority","structure","stability","leadership"],"reversed": ["tyranny","rigidity","loss of control","domination"]},
     "symbols": [
       "He sits on a stone throne carved with rams' heads — Aries, the sign of initiative, marking authority that has been earned.",
@@ -269,7 +269,7 @@
     "name": "The Hierophant",
     "suit": "major",
     "number": "V",
-    "image": "RWS_Tarot_05_Hierophant.jpg",
+    "image": "05_Hierophant.jpg",
     "keywords": {"upright": ["tradition","institutions","teaching","shared belief"],"reversed": ["rebellion","dogma","personal truth","spiritual independence"]},
     "symbols": [
       "He raises his right hand in blessing — the gesture of the one authorised to transmit.",
@@ -322,7 +322,7 @@
     "name": "The Lovers",
     "suit": "major",
     "number": "VI",
-    "image": "RWS_Tarot_06_Lovers.jpg",
+    "image": "06_Lovers.jpg",
     "keywords": {"upright": ["union","choice","alignment","attraction"],"reversed": ["disharmony","misalignment","bad choice","avoidance"]},
     "symbols": [
       "A man and a woman stand beneath a winged angel — the human pair under the blessing of a larger unity.",
@@ -375,7 +375,7 @@
     "name": "The Chariot",
     "suit": "major",
     "number": "VII",
-    "image": "RWS_Tarot_07_Chariot.jpg",
+    "image": "07_Chariot.jpg",
     "keywords": {"upright": ["willpower","victory","control","direction"],"reversed": ["lack of direction","scattered force","loss of control","aggression"]},
     "symbols": [
       "An armored figure drives a chariot — force directed by a will that stays at the reins.",
@@ -428,7 +428,7 @@
     "name": "Strength",
     "suit": "major",
     "number": "VIII",
-    "image": "RWS_Tarot_08_Strength.jpg",
+    "image": "08_Strength.jpg",
     "keywords": {"upright": ["courage","patience","inner strength","gentle mastery"],"reversed": ["self-doubt","weakness","raw force","loss of nerve"]},
     "symbols": [
       "A woman calmly opens (or closes) a lion's jaws — not force, but the gentle mastery of a wild thing.",
@@ -481,7 +481,7 @@
     "name": "The Hermit",
     "suit": "major",
     "number": "IX",
-    "image": "RWS_Tarot_09_Hermit.jpg",
+    "image": "09_Hermit.jpg",
     "keywords": {"upright": ["solitude","introspection","wisdom","inner guidance"],"reversed": ["isolation","loneliness","avoidance","withdrawal"]},
     "symbols": [
       "An old man stands alone on a snowy peak — elevation, the long climb toward understanding.",
@@ -534,7 +534,7 @@
     "name": "Wheel of Fortune",
     "suit": "major",
     "number": "X",
-    "image": "RWS_Tarot_10_Wheel_of_Fortune.jpg",
+    "image": "10_Wheel_of_Fortune.jpg",
     "keywords": {"upright": ["cycles","destiny","turning point","change"],"reversed": ["bad luck","resistance","stagnation","repeating patterns"]},
     "symbols": [
       "A great wheel turns in the sky — the law of return, the cycle no one escapes.",
@@ -587,7 +587,7 @@
     "name": "Justice",
     "suit": "major",
     "number": "XI",
-    "image": "RWS_Tarot_11_Justice.jpg",
+    "image": "11_Justice.jpg",
     "keywords": {"upright": ["fairness","truth","consequence","balance"],"reversed": ["injustice","dishonesty","imbalance","evasion"]},
     "symbols": [
       "She holds a sword perfectly upright — reason, cutting cleanly through what is unclear.",
@@ -640,7 +640,7 @@
     "name": "The Hanged Man",
     "suit": "major",
     "number": "XII",
-    "image": "RWS_Tarot_12_Hanged_Man.jpg",
+    "image": "12_Hanged_Man.jpg",
     "keywords": {"upright": ["surrender","new perspective","pause","willing sacrifice"],"reversed": ["stalling","avoidance","martyrdom","resistance"]},
     "symbols": [
       "A figure hangs upside down from a living tree — a reversal that is chosen, not suffered.",
@@ -693,7 +693,7 @@
     "name": "Death",
     "suit": "major",
     "number": "XIII",
-    "image": "RWS_Tarot_13_Death.jpg",
+    "image": "13_Death.jpg",
     "keywords": {"upright": ["transformation","endings","release","transition"],"reversed": ["resistance","fear of change","stagnation","clinging"]},
     "symbols": [
       "A skeleton rides a white horse — the inescapable change, coming regardless of rank or preparation.",
@@ -746,7 +746,7 @@
     "name": "Temperance",
     "suit": "major",
     "number": "XIV",
-    "image": "RWS_Tarot_14_Temperance.jpg",
+    "image": "14_Temperance.jpg",
     "keywords": {"upright": ["balance","moderation","alchemy","patience"],"reversed": ["imbalance","excess","haste","mixing badly"]},
     "symbols": [
       "An angel pours water between two cups — the careful mixing of elements into something new.",
@@ -799,7 +799,7 @@
     "name": "The Devil",
     "suit": "major",
     "number": "XV",
-    "image": "RWS_Tarot_15_Devil.jpg",
+    "image": "15_Devil.jpg",
     "keywords": {"upright": ["bondage","materialism","shadow","temptation"],"reversed": ["release","breaking free","awareness","reclaiming power"]},
     "symbols": [
       "A horned, bat-winged figure presides — the shadow, the part of the self that binds.",
@@ -852,7 +852,7 @@
     "name": "The Tower",
     "suit": "major",
     "number": "XVI",
-    "image": "RWS_Tarot_16_Tower.jpg",
+    "image": "16_Tower.jpg",
     "keywords": {"upright": ["upheaval","revelation","sudden change","collapse"],"reversed": ["delay","avoidance","inner upheaval","fear of disaster"]},
     "symbols": [
       "Lightning strikes the crown from the top of a tower — the false certainty that has been built up is not the truth.",
@@ -905,7 +905,7 @@
     "name": "The Star",
     "suit": "major",
     "number": "XVII",
-    "image": "RWS_Tarot_17_Star.jpg",
+    "image": "17_Star.jpg",
     "keywords": {"upright": ["hope","renewal","inspiration","healing"],"reversed": ["despair","disconnection","loss of faith","fatigue"]},
     "symbols": [
       "A nude figure pours water onto the land and into a pool — unselfconscious giving, in both directions.",
@@ -958,7 +958,7 @@
     "name": "The Moon",
     "suit": "major",
     "number": "XVIII",
-    "image": "RWS_Tarot_18_Moon.jpg",
+    "image": "18_Moon.jpg",
     "keywords": {"upright": ["illusion","intuition","subconscious","ambiguity"],"reversed": ["clarity","revealing","confusion lifting","truth surfacing"]},
     "symbols": [
       "A moon with a face shines in a deep sky — light that reflects rather than reveals, casting the world in doubt.",
@@ -1011,7 +1011,7 @@
     "name": "The Sun",
     "suit": "major",
     "number": "XIX",
-    "image": "RWS_Tarot_19_Sun.jpg",
+    "image": "19_Sun.jpg",
     "keywords": {"upright": ["joy","vitality","success","clarity"],"reversed": ["dimmed joy","pessimism","delay","self-doubt"]},
     "symbols": [
       "A child rides a white horse — innocent confidence, fully at ease in the light.",
@@ -1064,7 +1064,7 @@
     "name": "Judgement",
     "suit": "major",
     "number": "XX",
-    "image": "RWS_Tarot_20_Judgement.jpg",
+    "image": "20_Judgement.jpg",
     "keywords": {"upright": ["awakening","reckoning","absolution","calling"],"reversed": ["self-doubt","refusal","harsh judgment","staying closed"]},
     "symbols": [
       "An angel blows a trumpet — the call that cannot be unheard, arriving from beyond the self.",
@@ -1117,7 +1117,7 @@
     "name": "The World",
     "suit": "major",
     "number": "XXI",
-    "image": "RWS_Tarot_21_World.jpg",
+    "image": "21_World.jpg",
     "keywords": {"upright": ["completion","wholeness","fulfilment","return"],"reversed": ["incompletion","delay","near the end","unresolved"]},
     "symbols": [
       "A figure stands inside a great wreath — the whole cycle, embraced rather than escaped.",
