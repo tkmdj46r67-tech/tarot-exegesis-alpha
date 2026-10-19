@@ -1,8 +1,8 @@
 (() => {
   'use strict';
 
-  const IMG_BASE = 'https://commons.wikimedia.org/wiki/Special:FilePath/';
-  const img = (file, width = 500) => `${IMG_BASE}${file}?width=${width}`;
+  const IMG_BASE = 'images/';
+const img = (file, _width = 500) => `${IMG_BASE}${file}`;
 
   const SPREADS = {
     one: {
