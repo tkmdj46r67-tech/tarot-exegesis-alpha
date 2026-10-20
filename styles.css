@@ -21,7 +21,7 @@ html { background: var(--bg); }
 
 body {
   font-family: var(--font-body);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   line-height: 1.6;
   color: var(--text);
@@ -51,7 +51,7 @@ header {
 
 h1 {
   font-family: var(--font-display);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 28px;
   letter-spacing: 0.02em;
 }
@@ -171,7 +171,7 @@ button.primary {
   padding: 14px;
   font-family: var(--font-body);
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   cursor: pointer;
@@ -331,7 +331,7 @@ button.primary:active { transform: translateY(1px); }
 .derivation-title h3 {
   font-family: var(--font-display);
   font-size: 26px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 1.2;
 }
@@ -376,7 +376,7 @@ button.primary:active { transform: translateY(1px); }
   text-transform: uppercase;
   color: var(--accent-dim);
   margin-bottom: 14px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .derivation-section h4 .step {
@@ -430,7 +430,7 @@ button.primary:active { transform: translateY(1px); }
   color: var(--text-muted);
 }
 
-.position-note strong { color: var(--text); font-weight: 500; }
+.position-note strong { color: var(--text); font-weight: 400; }
 
 /* ---------- Step 5: the tip ---------- */
 .step5 {
@@ -454,7 +454,7 @@ button.primary:active { transform: translateY(1px); }
 .tip-act .arrow {
   color: var(--accent);
   margin-right: 6px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .overall-tip {
@@ -480,7 +480,7 @@ button.primary:active { transform: translateY(1px); }
 
 .library-header h2 {
   font-family: var(--font-display);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 32px;
   letter-spacing: 0.02em;
 }
