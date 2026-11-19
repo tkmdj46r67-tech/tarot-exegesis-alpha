@@ -29,7 +29,7 @@ const img = (file, _width = 500) => `${IMG_BASE}${file}`;
     pentacles: 'Pentacles'
   };
 
-  // ---------- Jodorowsky rule engine: constants ----------
+  // ---------- Tip rule engine: constants ----------
 
   // R2: remedy-pairs for the Major Arcana. Each card's medicine is its opposite.
   const REMEDY_PAIRS = {
@@ -116,7 +116,7 @@ const img = (file, _width = 500) => `${IMG_BASE}${file}`;
     return a;
   };
 
-  // ---------- Jodorowsky rule engine: functions ----------
+  // ---------- Tip rule engine: functions ----------
 
   /**
    * Step 5 for a single card.
@@ -377,7 +377,7 @@ function buildDerivation(d, i) {
         <p class="position-note">${esc(pos.frame)}</p>
       </section>
       <section class="derivation-section step5">
-        <h4><span class="step">Step 5</span>The Jodorowsky Tip</h4>
+        <h4><span class="step">Step 5</span>The Tip</h4>
         <p class="reading-text">${esc(tip.energyLine)}</p>
         <p class="tip-act"><span class="arrow">→</span> ${esc(tip.actLine)}</p>
       </section>
